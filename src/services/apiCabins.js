@@ -22,9 +22,6 @@ export async function createEditCabin(newCabin, id) {
     ? newCabin.image
     : `${supabaseUrl}/storage/v1/object/public/cabin-images/${imageName}`;
 
-  //const supabaseUrl = "https://fafspaqijfbvrmhrxeza.supabase.co";
-  //https://fafspaqijfbvrmhrxeza.supabase.co/storage/v1/object/public/cabin-images/cabin-003.jpg
-
   // 1. Create/edit cabin
   let query = supabase.from("cabins");
 

@@ -79,6 +79,7 @@ export async function getStaysAfterDate(date) {
     console.error(error);
     throw new Error("Bookings could not get loaded");
   }
+  console.log(data, "nazwerke getstaysafter", date);
 
   return data;
 }
